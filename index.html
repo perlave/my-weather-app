@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perla Weather</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                id="city-input"
+                class="form-control shadow-sm"
+                placeholder="Enter a city..."
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                current
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-4">
+            <h1 id="city">California</h1>
+          </div>
+          <ul>
+            <li id="date">Monday 13:43</li>
+            <li id="description"></li>
+          </ul>
+          <div class="row">
+            <div class="col-3">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="temperature" id="temperature">25</span>
+                  <span class="units">ºC</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li class="humi">Humidity: <span id="humidity"></span>%</li>
+                <li class="win">Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
