@@ -58,3 +58,10 @@ li {
   position: relative;
   left: 200px;
 }
+footer {
+  position: relative;
+  right: -12px;
+}
+body {
+  background: #f9f7fd;
+}
